@@ -1,0 +1,56 @@
+:root {
+  --text-main: #f9f9e0;
+}
+
+.bg-navbar {
+  background-color: #f05a95 !important;
+}
+.navbar {
+  --bs-navbar-color: var(--text-main) !important;
+  --bs-navbar-hover-color: var(--text-main) !important;
+  --bs-navbar-disabled-color: var(--text-main) !important;
+  --bs-navbar-active-color: var(--text-main) !important;
+  --bs-navbar-brand-color: var(--text-main) !important;
+  --bs-navbar-brand-hover-color: var(--text-main) !important;
+}
+
+.text-main {
+  color: var(--text-main);
+}
+
+.bg-main {
+  background-color: #ff90bc !important;
+}
+.jumbotron {
+  padding: 5%;
+}
+
+.orange-dark {
+  color: #ff8c00; /* Oranye gelap */
+}
+
+.btn-main {
+  border: none;
+  border: 3px #517a80 solid;
+  padding: 5px 30px;
+  border-radius: 20px;
+  background-color: #8acdd7;
+  font-weight: bold;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #f05a95;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin: 20px;
+}

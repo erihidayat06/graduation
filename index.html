@@ -1,9 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>graduationK2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siskeda</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Siskeda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#komentar">Komentar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-main">
+      <div class="jumbotron">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col d-flex align-items-center">
+            <div class="text-jumbotron text-main">
+              <h1 class="fw-bold">Siskeda</h1>
+              <h5 class="fw-bold">Sistem informasi kelompok 2</h5>
+              <p>
+                "Jangan senang dulu, ini awal dari semuanyaaa.... Info loker
+                pak, buu"
+              </p>
+
+              <button class="btn-main">Jelejahi</button>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/banner_foto.png" alt="" width="90%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="text-center mt-5 mb-5 fw-bold" id="team">Team</h1>
+      <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/syita.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">
+                Syita Nutyunaizah, A.Md.Kom
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/ami.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">
+                Aminatun Khoiriyyah, A.Md.Kom
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/widia.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">
+                Widya Bella Putriana, A.Md.Kom
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/biyan.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">
+                Athariq Byan F.S, A.Md.Kom
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/eri.JPG" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">
+                Eri Hidayat, A.Md.Kom
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-main mt-5 pb-5">
+      <h1 class="text-main text-center fw-bold" id="komentar">Komentar</h1>
+      <div class="col d-flex justify-content-end m-5">
+        <button
+          class="btn-main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Tambah Komentar
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Maaf</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1 class="text-center">Cuma Boongan</h1>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="text-main" />
+
+        <p class="fw-bold">Syita Nutyunaizah, A.Md.Kom</p>
+
+        <div class="d-flex justify-content">
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star orange-dark"></i>
+
+          <span class="ms-3">13 Agustus 2024</span>
+        </div>
+        <p class="mt-2">apa yg sudah dimulai, maka diselesaikan. well🤙🏻</p>
+
+        <hr class="text-main" />
+
+        <p class="fw-bold">SAthariq Byan F.S, A.Md.Kom</p>
+
+        <div class="d-flex justify-content">
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star orange-dark"></i>
+
+          <span class="ms-3">13 Agustus 2024</span>
+        </div>
+        <p class="mt-2">
+          Kedepannya lebih mapan lagi, biar bisa meminang dikau
+        </p>
+
+        <hr class="text-main" />
+
+        <p class="fw-bold">Eri Hidayat, A.Md.Kom</p>
+
+        <div class="d-flex justify-content">
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star orange-dark"></i>
+
+          <span class="ms-3">13 Agustus 2024</span>
+        </div>
+        <p class="mt-2">Saya pengen punya perusahaan teknologi !!!</p>
+
+        <hr class="text-main" />
+
+        <p class="fw-bold">Widya Bella Putriana, Amd.Kom</p>
+
+        <div class="d-flex justify-content">
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star orange-dark"></i>
+          <i class="bi bi-star orange-dark"></i>
+
+          <span class="ms-3">13 Agustus 2024</span>
+        </div>
+        <p class="mt-2">kuliah? teu ngeunah tapi ludes 🤪🥴</p>
+
+        <hr class="text-main" />
+
+        <p class="fw-bold">Aminatun Khoiriyyah, A.Md.Kom</p>
+
+        <div class="d-flex justify-content">
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+          <i class="bi bi-star-fill orange-dark"></i>
+
+          <span class="ms-3">13 Agustus 2024</span>
+        </div>
+        <p class="mt-2">
+          jadi orang yg uangnya selalu cukup. cukup buat beli porsche 2, cukup
+          buat beli rumah mansion, cukup buat beli saham pertamina, dan cukup
+          untuk bersedekah🥰😋🤲🏻
+        </p>
+        <hr class="text-main" />
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo">Siskeda</div>
+      <p class="text-center">&copy; Kelompok 2</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
